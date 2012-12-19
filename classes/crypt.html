@@ -11,7 +11,7 @@
 		var class_prefix = "Crypt::";
 	</script>
 	<script src="./../assets/js/combined.js"></script>
-	<title>Crypt - Classes - FuelPHP Documentation</title>
+	<title>Crypt - クラス - FuelPHP ドキュメント</title>
 </head>
 <body>
 	<div id="container">
@@ -25,7 +25,7 @@
 				<form id="google_search">
 					<p>
 						<span id="search_clear">&nbsp;</span>
-						<input type="submit" name="search_submit" id="search_submit" value="search" />
+						<input type="submit" name="search_submit" id="search_submit" value="検索" />
 						<input type="text" value="" id="search_input" name="search_input" />
 					</p>
 				</form>
@@ -34,7 +34,7 @@
 
 				<div class="clear"></div>
 			</nav>
-			<a href="#" id="toc_handle">table of contents</a>
+			<a href="#" id="toc_handle">目次</a>
 			<div class="clear"></div>
 		</header>
 
@@ -47,21 +47,19 @@
 
 			<h2>Crypt クラス</h2>
 
-			<p>
-				The Crypt class allows encrypt or decrypt a string. The Crypt class is also used internally by for example the Fuel Sessions class.
-			</p>
-			<p>It uses the encryption and hashing methods provided by PHPSecLib, so it's not dependent on external modules being available, such as mcrypt.</p>
+			<p>Crypt クラスは文字列の暗号化、復号化を行います。Crypt クラスは Session クラスによって内部的に使用されています。</p>
+			<p>PHPSecLib が提供する暗号化技術とハッシュ方式を採用しているので、 mcrypt のような外部モジュールには依存しません。</p>
 
 			<section>
 				<h3 id="configuration">設定</h3>
 
 				<p>
-					The Crypt class is configured through the <kbd>app/config/crypt.php</kbd> configuration file. It will be generated and populated with random values when you first use the Crypt class or if one of the required configuration values is missing.
+				  Crypt クラスの設定は設定ファイル <kbd>app/config/crypt.php</kbd> で行います。必要な設定値のいずれかが欠落している場合、初めて Crypt クラスを使用するときにランダムな値が生成されます。
 				</p>
 				<p class="note">
-					Note that this will require write access to app/config/crypt.php! If this is not possible, make sure all configuration settings are set!
+				  app/config/crypt.php ファイルに対する書き込み権限が必要となります。それが出来ない場合は、すべての設定が設定されていることを確認してください。
 				</p>
-				<p>The following configuration settings can be defined:</p>
+				<p>設定項目は次のように設定されています。</p>
 				<table class="config">
 					<tbody>
 						<tr class="header">
